@@ -1,4 +1,4 @@
-let audioElement = new Audio("songs2/1.mp3");
+let audioElement = new Audio("songs/1.mp3");
 let SongIndex = 0;
 let pause = document.getElementById("pau");
 let play = document.getElementById("pla");
@@ -29,15 +29,15 @@ audioElement.addEventListener("timeupdate", () => {
   })
   
   if (seek.value > 99) {
-    if (SongIndex < songs2.length - 1) {
+    if (SongIndex < songs.length - 1) {
       SongIndex += 1;
       seek.value = 0;
-      audioElement.src = `songs2/${SongIndex + 1}.mp3`;
+      audioElement.src = `songs/${SongIndex + 1}.mp3`;
       audioElement.play();
     } else {
       SongIndex = 0;
       seek.value = 0;
-      audioElement.src = `songs2/${SongIndex + 1}.mp3`;
+      audioElement.src = `song/${SongIndex + 1}.mp3`;
       audioElement.play();
     }
   }
@@ -58,14 +58,14 @@ pause.addEventListener("click", () => {
 
 
 forward.addEventListener("click",()=>{
-    if(SongIndex<songs2.length-1){
+    if(SongIndex<songs.length-1){
         SongIndex+=1;
-        audioElement.src = `songs2/${SongIndex + 1}.mp3`;
+        audioElement.src = `songs/${SongIndex + 1}.mp3`;
         audioElement.play();
     }
     else{
         SongIndex=0;
-        audioElement.src = `songs2/${SongIndex + 1}.mp3`;
+        audioElement.src = `songs/${SongIndex + 1}.mp3`;
         audioElement.play();
     }
 })
@@ -73,13 +73,13 @@ forward.addEventListener("click",()=>{
 previous.addEventListener("click",()=>{
     if (SongIndex > 0) {
         SongIndex -= 1;
-        audioElement.src = `songs2/${SongIndex + 1}.mp3`;
+        audioElement.src = `songs/${SongIndex + 1}.mp3`;
         audioElement.play();
     }
     else
     {
-        SongIndex = songs2.length-1;
-        audioElement.src = `songs2/${SongIndex + 1}.mp3`;
+        SongIndex = songs.length-1;
+        audioElement.src = `songs/${SongIndex + 1}.mp3`;
         audioElement.play();
     }
 })

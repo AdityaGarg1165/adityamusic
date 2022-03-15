@@ -15,7 +15,7 @@ export default function Home() {
     <div>
       <script defer src="script.js"></script>
       <title>Home</title>
-      <div className="songitems">
+      {/* <div className="songitems">
         <div className="item">
           <h3 className="hitem" id="1">sdfg</h3>
           <FaPlayCircle className="plcrcle"size={30}/>
@@ -23,9 +23,9 @@ export default function Home() {
         <div className="item">
           <h3 className='hitem'>sdfg</h3>
           <FaPlayCircle className="plcrcle"size={30}/>
-          </div>
-      </div>
-      <div className="itmbx"></div>
+          </div> */}
+      {/* </div> */}
+      {/* <div className="itmbx"></div> */}
       <div className={styles.box}> 
       <FaPauseCircle id="pau" className={styles.play} size={40}/>
       <FaPlayCircle id="pla" className={styles.pause} size={40}/>
