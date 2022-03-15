@@ -1,0 +1,112 @@
+.box
+{
+  width: 360px;
+  height: 420px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-left: 75vh;
+  margin-top: 30vh;
+  border-radius: 5px;
+}
+.c1
+{
+  width: 200px;
+  margin-top: -300px;
+  margin-left: 9vh;
+  position: absolute;
+  border-radius: 500px;
+  animation-name: aditya;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  
+  
+    
+}
+@keyframes aditya
+  {
+    0%
+    {
+      transform: rotate(0.1turn);
+    }
+    100%
+    {
+      transform: rotate(1turn);
+    }
+  }
+.seekbar{
+  width: 40vh;
+  -webkit-appearance: none;
+  width: 36vh;
+  margin-left: 1.5vh;
+  margin-top: 37vh;
+  height: 5px;
+  background: #3264AC;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.seekbar::-moz-range-thumb:active
+{
+  background: #3264AC;
+}
+.seekbar::-webkit-slider-thumb:active
+{
+  background: #3264AC;
+}
+.li{
+  list-style: none;
+  font-size: larger;
+}
+.seekbar::-webkit-slider-thumb
+{
+  -webkit-appearance: none;
+  width: 20px;
+  border-radius: 50px;
+  height: 20px;
+  background: gray;
+  border: 2.7px solid lightgray;
+  cursor: pointer;
+}
+.seekbar::-moz-range-thumb
+{
+  -webkit-appearance: none;
+  width: 20px;
+  border-radius: 50px;
+  height: 20px;
+  background: gray;
+  border: 2.7px solid lightgray;
+  cursor: pointer;
+}
+
+.play
+{
+  margin-left: 161px;
+  display: none;
+  margin-top: 370px;
+  position: absolute;
+}
+.pause
+{
+  margin-left: 161px;
+  margin-top: 370px;  
+  position: absolute;
+}
+.back
+{
+  transform: rotate(0.5turn);
+  margin-top: 40.3vh;
+  margin-left: 5vh;
+  position: absolute;
+}
+.forw
+{
+
+  margin-top: 40.3vh;
+  margin-left: 30vh;
+  position: absolute;
+}
+.title
+{
+  margin-top: -7vh;
+  margin-left:12.5vh;
+}

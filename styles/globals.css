@@ -1,0 +1,38 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+.songitems{
+  margin-top: 72vh;
+  position: absolute;
+  margin-left: 87vh;
+  font-size: 3vh;
+
+}
+.itmbx{
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+  width: 52vh;
+  height: 62vh;
+  margin-top: 62vh;
+  margin-left: 70.4vh;
+
+}
+.plcrcle{
+  margin-left: -5vh;
+  margin-top: -7vh;
+  position: absolute;
+  cursor: pointer;
+}
